@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact-styles.css" />
+  </head>
+  <body>
+    <form action="">
+        <section class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" required />
+            <button onclick="submitForm()">Submit</button>
+        </section>
+        <section class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <button onclick="submitForm()">Submit</button>
+        </section>
+        <section class="form-group">
+            <p>How did you hear about me?</p>
+            <ol>
+                <label for="checkbox">Classmate</label>
+                <input type="checkbox">
+                <label for="checkbox">Resume Submission</label>
+                <input type="checkbox">
+                <label for="checkbox">LinkedIn</label>
+                <input type="checkbox">
+                <label for="checkbox">Coding Academy Rec</label>
+                <input type="checkbox">
+            </ol>
+        </section>
+        <section class="form-group">
+            <p>Would you like to be contacted back?</p>
+            <ol>
+                <label for="radio">yes</label>
+                <input type="radio">
+                <label for="radio">no</label>
+                <input type="radio">
+            </ol>
+        </section>
+        <section class="form-group">
+            <label for="date">Would you like a Birthday Wish? (Optional)</label>
+            <input type="date">
+            <button onclick="submitForm()">Submit</button>
+        </section>
+    </form>
+  </body>
+</html>
