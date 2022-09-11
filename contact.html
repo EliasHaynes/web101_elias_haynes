@@ -7,44 +7,60 @@
     <link rel="stylesheet" href="./contact-styles.css" />
   </head>
   <body>
-    <form action="">
-        <section class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" required />
-            <button onclick="submitForm()">Submit</button>
+    <section class="first-row">
+      <nav></nav>
+      <h1>Elias Haynes Contact Page</h1>
+    </section>
+    <section class="second-row">
+      <p>Hey there! Please fill out this form if you are looking to contact me and we will be in touch!</p>
+    </section>
+    <section class="third-row">
+      <form action="">
+        <!-- Email -->
+          <label for="email">Email:</label>
+          <input type="email" required />
+          <button onclick="submitForm()">Submit</button>
+        <!-- Comments -->
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          <button onclick="submitForm()">Submit</button>
+        <!-- Checkbox -->
+          <p>How did you hear about me?</p>
+          <ol>
+            <label for="checkbox">Classmate</label>
+            <input type="checkbox" />
+            <label for="checkbox">Resume Submission</label>
+            <input type="checkbox" />
+            <label for="checkbox">LinkedIn</label>
+            <input type="checkbox" />
+            <label for="checkbox">Coding Academy Rec</label>
+            <input type="checkbox" />
+          </ol>
+          <!-- Radio -->
+          <p>Would you like to be contacted back?</p>
+          <ol>
+            <label for="radio">yes</label>
+            <input type="radio" />
+            <label for="radio">no</label>
+            <input type="radio" />
+          </ol>
+          <!-- Birthday Wish -->
+          <label for="date">Would you like a Birthday Wish? (Optional)</label>
+          <input type="date" />
+          <button onclick="submitForm()">Submit</button>
+      </form>
+    </section>
+    <section class="last-row">
+        <section class="sub-container1">
+          <!-- These will be flexboxed in a row and will have a header inside each -->
+          <h4>idk1</h4>
         </section>
-        <section class="form-group">
-            <label for="comments">Comments:</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-            <button onclick="submitForm()">Submit</button>
+        <section class="sub-container2">
+          <h4>idk2</h4>
         </section>
-        <section class="form-group">
-            <p>How did you hear about me?</p>
-            <ol>
-                <label for="checkbox">Classmate</label>
-                <input type="checkbox">
-                <label for="checkbox">Resume Submission</label>
-                <input type="checkbox">
-                <label for="checkbox">LinkedIn</label>
-                <input type="checkbox">
-                <label for="checkbox">Coding Academy Rec</label>
-                <input type="checkbox">
-            </ol>
+        <section class="sub-container3">
+          <h4>idk3</h4>
         </section>
-        <section class="form-group">
-            <p>Would you like to be contacted back?</p>
-            <ol>
-                <label for="radio">yes</label>
-                <input type="radio">
-                <label for="radio">no</label>
-                <input type="radio">
-            </ol>
-        </section>
-        <section class="form-group">
-            <label for="date">Would you like a Birthday Wish? (Optional)</label>
-            <input type="date">
-            <button onclick="submitForm()">Submit</button>
-        </section>
-    </form>
+    </section>
   </body>
 </html>

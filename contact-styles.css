@@ -3,7 +3,76 @@
 }
 
 body {
+    height:100%;
+    width:100%;
     background-color: lightgray;
+    margin:0px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* Dont define columns so that it can later be defined in each row seperately if needed such as the 4th row with 3 columns */
+
 }
+
+.first-row {
+    width: 100%;
+    /* set background image and header */
+    background-image: ;
+    
+}
+
+.first-row h1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.second-row {
+
+}
+
+.third-row {
+
+}
+
+.last-row {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sub-container1 {
+    grid-column:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container2 {
+    grid-column: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sub-container3 {
+    grid-column: 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
